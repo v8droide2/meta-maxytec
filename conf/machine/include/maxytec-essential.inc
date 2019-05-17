@@ -6,6 +6,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
 	kernel-module-cdfs \
 	${@bb.utils.contains('MACHINE_FEATURES', 'mali', 'maxytec-mali-${MACHINE} kernel-module-mali-${MACHINE}' , '', d)} \
+	${@bb.utils.contains('MACHINE_FEATURES', 'wol', 'maxytec-ethwol' , '', d)} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'resizerootfs partitions-by-name' , '', d)} \
 	\
 	firmware-carl9170 \
