@@ -9,7 +9,7 @@ SRCDATE = "20181228"
 COMPATIBLE_MACHINE = "multibox"
 
 inherit kernel machine_kernel_pr
-MACHINE_KERNEL_PR_append = ".5"
+MACHINE_KERNEL_PR_append = ".6"
 
 SRC_URI[arm.md5sum] = "ede25f1c2c060f1059529a2896cee5a9"
 SRC_URI[arm.sha256sum] = "ea4ba0433d252c18f38ff2f4dce4b70880e447e1cffdc2066d5a9b5f8098ae7e"
@@ -21,6 +21,7 @@ SRC_URI = "http://downloads.mutant-digital.net/linux-${PV}-${SRCDATE}-${ARCH}.ta
 	file://findkerneldevice.sh \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
+	file://Backport_minimal_compiler_attributes_h_to_support_GCC_9.patch \
 "
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
