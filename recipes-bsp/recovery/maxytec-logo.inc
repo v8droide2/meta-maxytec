@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit deploy
 
-SRC_URI = "http://downloads.mutant-digital.net/maxytec/${MACHINE}/${MACHINE}-logo-${SRCDATE}.zip"
+SRC_URI = "http://downloads.mutant-digital.net/maxytec/multibox/multibox-logo-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
@@ -16,7 +16,7 @@ do_configure[nostamp] = "1"
 
 do_deploy() {
     install -d ${DEPLOY_DIR_IMAGE}/maxytec-partitions-${MACHINE}/${MACHINE}
-    install -m 0755 ${WORKDIR}/${MACHINE}/logo.img ${DEPLOY_DIR_IMAGE}/maxytec-partitions-${MACHINE}/${MACHINE}
+    install -m 0755 ${WORKDIR}/logo.img ${DEPLOY_DIR_IMAGE}/maxytec-partitions-${MACHINE}/${MACHINE}
 }
 
 addtask deploy before do_build after do_install

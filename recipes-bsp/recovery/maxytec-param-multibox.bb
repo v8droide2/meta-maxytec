@@ -1,8 +1,8 @@
-SRCDATE = "20190515"
+SRCDATE = "20200630"
 
 require maxytec-param.inc
 
-SRC_URI[md5sum] = "9f05aa32db8837cd148c660927805949"
-SRC_URI[sha256sum] = "2892dade8c6a36aaa6bcadb64fb6fa95a6a39f71de76561c3cbc1b6b4282d580"
+SRC_URI[md5sum] = "29e396cc5772f1b14b6b59acc1175e8f"
+SRC_URI[sha256sum] = "f07fd9707db934cdb192312ab251e9ea7120563714a9de36f7d3cec8ac2643a4"
 
-COMPATIBLE_MACHINE = "multibox"
+COMPATIBLE_MACHINE = "multibox|plus"
