@@ -6,7 +6,7 @@ PR = "${SRCDATE}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
-SRC_URI = "http://downloads.mutant-digital.net/maxytec/${MACHINE}/${MACHINE}-libs${VER}-${SRCDATE}.zip"
+SRC_URI = "http://downloads.mutant-digital.net/maxytec/multibox/multibox-libs${VER}-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
