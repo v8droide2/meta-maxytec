@@ -34,5 +34,5 @@ pkg_prerm_${PN}() {
 	fi
 }
 
-RREPLACES_${PN} = "kernel-module-hd61-1-4.4.35 kernel-module-hd61-2-4.4.35 kernel-module-hd61-3-4.4.35 kernel-module-hd61-4-4.4.35 kernel-module-hi-play-4.4.35"
-RCONFLICTS_${PN} = "kernel-module-hd61-1-4.4.35 kernel-module-hd61-2-4.4.35 kernel-module-hd61-3-4.4.35 kernel-module-hd61-4-4.4.35 kernel-module-hi-play-4.4.35"
+RREPLACES_${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
+RCONFLICTS_${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
