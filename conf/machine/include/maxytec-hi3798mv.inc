@@ -106,3 +106,7 @@ IMAGE_CMD_multibox8gbplus_append = " \
 	cd ..; \
 	rm -Rf ${IMAGEDIR}; \
 "
+
+IMAGE_CMD_prepend = " \
+	rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
+"
