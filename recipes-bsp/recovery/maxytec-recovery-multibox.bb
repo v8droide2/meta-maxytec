@@ -1,8 +1,8 @@
-SRCDATE = "20200424"
+SRCDATE = "20201110"
 
 require maxytec-recovery.inc
 
-SRC_URI[md5sum] = "7292ff6dcb4ad45f040c956de6cf884c"
-SRC_URI[sha256sum] = "6146e2ec39ea231bcb894fa4cd178ff829202e96768349d08c9444e1a5d6bc3d"
+SRC_URI[md5sum] = "68ca177b0be5ffcc12fdab3989de8fd9"
+SRC_URI[sha256sum] = "f1c726d24f5f1bf12024ef84fd3a00e2321884bbbc8de50a71de08107117d2f2"
 
 COMPATIBLE_MACHINE = "multibox"
