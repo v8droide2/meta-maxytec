@@ -80,3 +80,17 @@ IMAGE_CMD_maxytecfastboot8gb_append = " \
 IMAGE_CMD_prepend = " \
 	rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
 "
+
+BOX_BRAND = "maxytec"
+
+SOC_FAMILY = "hisi3798mv200"
+
+RCTYPE = "27"
+RCNAME = "maxytec1"
+
+MTD_BOOTFS = "mmcblk0p4"
+MTD_ROOTFS = "mmcblk0p20"
+MTD_KERNEL = "mmcblk0p19"
+MTD_BLACK  = "mmcblk0"
+KERNEL_FILE = "uImage"
+ROOTFS_FILE = "rootfs.tar.bz2"
